@@ -3,8 +3,6 @@ import PerkTable from "./components/perkTable";
 
 var data = require("./data/David.json");
 
-// turn p -> component
-
 function App() {
   return (
     <div className="container">
@@ -14,7 +12,9 @@ function App() {
           {data.Special.map((specialStat, index) => {
             return (
               <div>
-                <p key={index}>{specialStat.SpecialName}</p>
+                <p key={index}>
+                  <u>{specialStat.SpecialName}</u>
+                </p>
                 <PerkTable perks={specialStat.Perks} />
               </div>
             );

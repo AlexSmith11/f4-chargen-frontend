@@ -1,6 +1,4 @@
 const PerkTable = (perks) => {
-  // console.table(data);
-  // console.log(data.Special[0]); // strength and its perks
   return (
     <table className="table">
       <thead>
